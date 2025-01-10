@@ -5,7 +5,8 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.wrap = false
 vim.opt.smarttab = true
 vim.opt.termguicolors = true
-
+vim.opt.scrolloff = 8
+vim.opt.relativenumber = true
 
 vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>")
 vim.keymap.set("n", "<space>x", ":.lua<CR>")

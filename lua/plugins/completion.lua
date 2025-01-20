@@ -18,7 +18,10 @@ return {
         default = { 'lsp', 'path', 'snippets', 'buffer' },
       },
 
-      signature = { enabled = true },
+      signature = {
+        enabled = true,
+        window = { border = 'double' },
+      },
 
       -- nvim-highlight-colors support
       completion = {

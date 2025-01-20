@@ -21,3 +21,11 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     vim.highlight.on_yank()
   end,
 })
+
+vim.keymap.set({ 'i', 's' }, '<Tab>', function()
+  if vim.snippet.active({ direction = 1 }) then
+    return '<Cmd>lua vim.snippet.jump(1)<CR>'
+  else
+    return '<Tab>'
+  end
+end, { expr = true })
